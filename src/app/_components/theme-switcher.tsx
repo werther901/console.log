@@ -1,6 +1,5 @@
 "use client";
 
-import styles from "./switch.module.css";
 import { memo, useEffect, useState } from "react";
 
 declare global {
@@ -44,7 +43,7 @@ export const NoFOUCScript = (storageKey: string) => {
     const classList = document.documentElement.classList;
     if (resolvedMode === DARK) classList.add(DARK);
     else classList.remove(DARK);
-    document.documentElement.setAttribute("data-mode", mode);
+    // document.documentElement.setAttribute("data-mode", mode);
     restoreTransitions();
   };
   window.updateDOM();
@@ -86,7 +85,7 @@ const Switch = () => {
   return (
     <button
       suppressHydrationWarning
-      className={styles.switch}
+      className={""}
       onClick={handleModeSwitch}
     />
   );
