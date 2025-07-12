@@ -47,7 +47,7 @@ const TypingAnimation = ({ text }: { text: string }) => {
   }, [text]);
 
   return (
-    <span className="flex text-gray-900 lg:text-[9rem] text-[4rem] leading-[1.2] tracking-tighter">
+    <span className="flex text-white lg:text-[9rem] text-[4rem] leading-[1.2] tracking-tighter">
       {displayText}
       {isTyping && <span className="animate-pulse">|</span>}
     </span>
