@@ -4,7 +4,7 @@ import linkIcon from "../../../public/assets/icon/free-icon-link.png";
 
 const Header = () => {
   return (
-    <h2 className="flex items-center h-full text-xl justify-between w-full lg:p-5 p-5">
+    <h2 className="flex items-center h-full text-xl justify-between w-full lg:py-5 py-5 border-b border-white">
       <Link href="/" className="hover:underline">
         Console.log
       </Link>
@@ -15,7 +15,7 @@ const Header = () => {
         </Link>
 
         <Link
-          href="https://github.com"
+          href="https://github.com/werther901"
           target="_blank"
           rel="noopener noreferrer"
           className="flex items-center gap-x-2 bg-white text-base text-black px-3 py-1.5 rounded-full"

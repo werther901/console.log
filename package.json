@@ -9,6 +9,8 @@
     "@fxts/core": "^1.13.2",
     "@giscus/react": "^3.1.0",
     "@next/mdx": "^15.3.5",
+    "@react-three/drei": "^10.5.0",
+    "@react-three/fiber": "^9.2.0",
     "classnames": "^2.5.1",
     "date-fns": "^3.6.0",
     "gray-matter": "^4.0.3",
@@ -18,7 +20,8 @@
     "react-dom": "^19.1.0",
     "remark": "^15.0.1",
     "remark-gfm": "^4.0.1",
-    "remark-html": "^16.0.1"
+    "remark-html": "^16.0.1",
+    "three": "^0.178.0"
   },
   "devDependencies": {
     "@types/node": "^20.14.8",
