@@ -21,7 +21,7 @@ export default function Home() {
         <div className="w-full max-w-6xl relative">
           <Headset3D />
           <div className="absolute inset-0 flex items-center justify-center z-[-1] pointer-events-none">
-            <h1 className="text-8xl font-bold text-white opacity-30 -translate-y-32">
+            <h1 className="text-7xl lg:text-8xl font-bold text-white opacity-30 -translate-y-12 lg:-translate-y-32">
               Frontend Tech Blog
             </h1>
           </div>

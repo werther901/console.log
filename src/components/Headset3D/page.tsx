@@ -21,7 +21,7 @@ const HeadsetModel = ({
     if (meshRef.current) {
       // 마우스 위치에 따라 회전
       meshRef.current.rotation.y = mousePosition.x * 0.5;
-      meshRef.current.rotation.x = mousePosition.y * 0.3;
+      meshRef.current.rotation.x = -mousePosition.y * 0.5;
     }
   });
 
@@ -49,7 +49,7 @@ const Headset3D = () => {
   }, []);
 
   return (
-    <div className="w-full h-[500px]">
+    <div className="w-full h-[250px] lg:h-[530px] md:h-[420px]">
       <Canvas
         camera={{ position: [0, 1, 5], fov: 60 }}
         style={{ background: "transparent" }}
@@ -65,7 +65,8 @@ const Headset3D = () => {
           castShadow
         />
         <HeadsetModel mousePosition={mousePosition} />
-        <OrbitControls enableZoom={false} enablePan={false} />
+        {/* 마우스 클릭 + 드래그 시 움직임 제어 */}
+        {/* <OrbitControls enableZoom={false} enablePan={false} /> */}
         {/* HDR 환경 조명 */}
         <Environment preset="city" />{" "}
         {/* 또는 'sunset', 'night', 'warehouse' 등 */}
